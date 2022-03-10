@@ -29,4 +29,7 @@ Route::post('user/login', 'Auth\AdminAuthController@postLogin');
 // Route::get('/post/{id}/edit','PostController@edit');
 // Route::put('/post/{id}','PostController@update');
 // Route::delete('/post/{id}','PostController@destroy');
-Route::get('/company', 'CompanyController@index');
+Route::get('/comp/{id}/daftar', 'CompanyController@index');
+Route::get('post/delete/{id}', 'CompanyController@hapus')->name('post.delete'); 
+Route::get('/comp/{id}/cetak_pdf', 'CompanyController@cetak_pdf');
+Route::post('/karyawan/import_excel', 'KaryawanController@import_excel');
