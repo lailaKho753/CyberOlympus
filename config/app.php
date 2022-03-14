@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'PT Transisi'),
+    'name' => env('APP_NAME', 'Cyber Olympus'),
 
     /*
     |--------------------------------------------------------------------------

@@ -1,21 +1,18 @@
 <?php
-
 use Illuminate\Database\Seeder;
-use App\User;
-
-class UserTableSeeder extends Seeder
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
+ 
+class DatabaseSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Run the database seeders.
      *
      * @return void
      */
     public function run()
     {
-        User::create([
-            'name' => 'user',
-            'email' => 'admin@transisi.id',
-            'password' => bcrypt('transisi'),
-        ]);
+        //
     }
 }
